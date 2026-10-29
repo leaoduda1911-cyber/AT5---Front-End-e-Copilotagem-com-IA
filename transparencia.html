@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transparência | Efeito Vitrine do LinkedIn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Efeito Vitrine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="contexto.html">Contexto</a></li>
+            <li class="nav-item"><a class="nav-link" href="teoria.html">Teoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="evidencias.html">Evidências</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificacoes.html">Certificações</a></li>
+            <li class="nav-item"><a class="nav-link" href="contraponto.html">Lado positivo</a></li>
+            <li class="nav-item"><a class="nav-link" href="termometro.html">Autoteste</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="transparencia.html">Transparência</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container py-5">
+
+    <section class="mb-5">
+      <h1 class="mb-3">Transparência</h1>
+      <p class="lead">
+        Aqui mostramos como usamos inteligência artificial neste projeto, quem fez cada parte
+        e quais referências sustentam o conteúdo.
+      </p>
+    </section>
+
+    
+    <section class="mb-5" aria-labelledby="titulo-auditoria">
+      <h2 id="titulo-auditoria" class="h3 mb-3">Auditoria de IA</h2>
+      <p>
+        Resumo das três fichas de auditoria. A versão completa está no arquivo
+        <code>AUDITORIA_IA.md</code> do repositório.
+      </p>
+
+      <div class="accordion" id="accordionAuditoria">
+
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ficha1" aria-expanded="true" aria-controls="ficha1">
+              Ficha 1: Estruturação inicial do layout e componentes do Bootstrap
+            </button>
+          </h3>
+          <div id="ficha1" class="accordion-collapse collapse show" data-bs-parent="#accordionAuditoria">
+            <div class="accordion-body">
+              <dl class="mb-0">
+                <dt>Prompt</dt><dd>Crie a estrutura base em HTML e Bootstrap para a página de transparência de um projeto acadêmico.</dd>
+                <dt>Resposta da IA (resumo)</dt><dd>Gerou um esqueleto HTML padrão utilizando componentes do Bootstrap 5, como acordeões e tabelas.</dd>
+                <dt>Diagnóstico (o que estava errado ou fraco)</dt><dd>O código continha marcações genéricas de marca-texto e faltavam espaçamentos adequados entre as seções.</dd>
+                <dt>Refatoração (o que foi corrigido)</dt><dd>Ajuste das classes de espaçamento (py-5, mb-5) e substituição de textos genéricos por descrições alinhadas ao tema de TI.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ficha2" aria-expanded="false" aria-controls="ficha2">
+              Ficha 2: Criação de funções dinâmicas em JavaScript (Autoteste)
+            </button>
+          </h3>
+          <div id="ficha2" class="accordion-collapse collapse" data-bs-parent="#accordionAuditoria">
+            <div class="accordion-body">
+              <dl class="mb-0">
+                <dt>Prompt</dt><dd>Como implementar a lógica para calcular pontuações de um formulário de 10 perguntas dinâmicas?</dd>
+                <dt>Resposta da IA (resumo)</dt><dd>Forneceu um script básico utilizando manipulação de DOM e loops para somar valores.</dd>
+                <dt>Diagnóstico</dt><dd>Faltavam validações de campos obrigatórios e feedback visual em tempo real para o usuário.</dd>
+                <dt>Refatoração</dt><dd>Inclusão de mensagens de alerta dinâmicas, validação de preenchimento completo e barra de progresso interativa.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ficha3" aria-expanded="false" aria-controls="ficha3">
+              Ficha 3: Revisão gramatical e padronização de referências bibliográficas
+            </button>
+          </h3>
+          <div id="ficha3" class="accordion-collapse collapse" data-bs-parent="#accordionAuditoria">
+            <div class="accordion-body">
+              <dl class="mb-0">
+                <dt>Prompt</dt><dd>Revise o texto da seção de referências para garantir o alinhamento com as normas acadêmicas.</dd>
+                <dt>Resposta da IA (resumo)</dt><dd>Reorganizou os autores e títulos nos padrões exigidos.</dd>
+                <dt>Diagnóstico</dt><dd>Alguns links externos precisavam de atributos de segurança adequados.</dd>
+                <dt>Refatoração</dt><dd>Adição dos atributos `target="_blank"` e `rel="noopener"` em todos os links externos de referências.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="mb-5" aria-labelledby="titulo-equipe">
+      <h2 id="titulo-equipe" class="h3 mb-3">Quem fez o quê</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <caption>Divisão de tarefas da dupla</caption>
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Integrante</th>
+              <th scope="col">Páginas e tarefas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Julia Sarai</td>
+              <td>index, contexto, teoria, evidências e pesquisas iniciais</td>
+            </tr>
+            <tr>
+              <td>Maria Eduarda</td>
+              <td>certificacoes, contraponto, termômetro, transparência e integração geral</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="h5 mt-4">Ferramentas utilizadas</h3>
+      <ul>
+        <li>Visual Studio Code, Git e GitHub</li>
+        <li>Bootstrap 5 (via CDN) e Chart.js</li>
+        <li>Ferramentas de IA: Copilot e modelos de linguagem para estruturação e revisão de código</li>
+      </ul>
+    </section>
+
+    
+    <section class="mb-5" aria-labelledby="titulo-referencias">
+      <h2 id="titulo-referencias" class="h3 mb-3">Referências</h2>
+      <p class="small text-body-secondary">
+        Relação de fontes acadêmicas e artigos consultados para a fundamentação teórica do projeto.
+      </p>
+      <ul class="list-unstyled referencias">
+        <li class="mb-3">
+          FESTINGER, L. A theory of social comparison processes. <strong>Human Relations</strong>,
+          v. 7, n. 2, p. 117-140, 1954.
+        </li>
+        <li class="mb-3">
+          PRZYBYLSKI, A. K. et al. Motivational, emotional, and behavioral correlates of fear of
+          missing out. <strong>Computers in Human Behavior</strong>, v. 29, n. 4, p. 1841-1848, 2013.
+        </li>
+        <li class="mb-3">
+          Exame. FOMO na vida profissional. Disponível em:
+          <a href="https://exame.com/carreira/guia-de-carreira/fomo-na-vida-profissional-como-lidar-com-a-ansiedade-de-perder-oportunidades-na-carreira/" target="_blank" rel="noopener">exame.com</a>.
+          Acesso em: 29 out. 2026.
+        </li>
+        <li class="mb-3">
+          Meio &amp; Mensagem. Como o LinkedIn se consolidou no mercado brasileiro. Disponível em:
+          <a href="https://www.meioemensagem.com.br/midia/como-o-linkedin-se-consolidou-no-mercado-brasileiro" target="_blank" rel="noopener">meioemensagem.com.br</a>.
+          Acesso em: 29 out. 2026.
+        </li>
+        <li class="mb-3">
+          NapoleonCat. LinkedIn users in Brazil. Disponível em:
+          <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/" target="_blank" rel="noopener">napoleoncat.com</a>.
+          Acesso em: 29 out. 2026.
+        </li>
+        <li class="mb-3">
+          Erasmus University Rotterdam. Beyond Networking: does social comparison on LinkedIn influence job
+          search anxiety by reducing career-related self-efficacy of graduate students? Disponível em:
+          <a href="https://thesis.eur.nl/pub/74979" target="_blank" rel="noopener">thesis.eur.nl</a>.
+          Acesso em: 29 out. 2026.
+        </li>
+        <li class="mb-3">
+          PUCRS / Anhanguera / Gran Cursos. Artigos de apoio sobre o impacto das redes sociais profissionais na carreira de estudantes de tecnologia.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="border-top py-4 mt-5 text-center text-body-secondary small">
+    <div class="container">
+      <p class="mb-0">Projeto acadêmico | Efeito vitrine do LinkedIn e o FOMO profissional em estudantes de TI</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

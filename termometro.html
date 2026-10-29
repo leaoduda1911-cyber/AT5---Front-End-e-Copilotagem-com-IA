@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termômetro da Vitrine | Efeito Vitrine do LinkedIn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Efeito Vitrine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="contexto.html">Contexto</a></li>
+            <li class="nav-item"><a class="nav-link" href="teoria.html">Teoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="evidencias.html">Evidências</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificacoes.html">Certificações</a></li>
+            <li class="nav-item"><a class="nav-link" href="contraponto.html">Lado positivo</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="termometro.html">Autoteste</a></li>
+            <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparência</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container py-5">
+
+    <section class="mb-4">
+      <h1 class="mb-3">Termômetro da Vitrine</h1>
+      <p class="lead">
+        Responda às 10 afirmações abaixo de 1 (discordo totalmente) a 5 (concordo totalmente)
+        pensando no seu uso do LinkedIn.
+      </p>
+      <div class="alert alert-warning" role="note">
+        <strong>Não é diagnóstico.</strong> Este teste é uma ferramenta de reflexão, não é validado
+        nem clínico. Foi inspirado na escala de FoMO de Przybylski et al. (2013), com itens
+        escritos pela nossa equipe.
+      </div>
+    </section>
+
+    
+    <div class="mb-4 sticky-top bg-body py-2">
+      <div class="d-flex justify-content-between small mb-1">
+        <span id="textoProgresso">0 de 10 respondidas</span>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Progresso do teste"
+           aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="barraWrapper">
+        <div class="progress-bar" id="barraProgresso" style="width: 0%"></div>
+      </div>
+    </div>
+
+    
+    <form id="formTeste" novalidate>
+      <div id="listaPerguntas"></div>
+
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <button type="submit" class="btn btn-primary">Ver meu resultado</button>
+        <button type="button" class="btn btn-outline-secondary" id="btnRefazer">Refazer</button>
+      </div>
+      <p class="text-danger mt-3 d-none" id="avisoIncompleto" role="alert">
+        Responda todas as afirmações para ver o resultado.
+      </p>
+    </form>
+
+    
+    <section class="mt-5" aria-labelledby="titulo-resultado">
+      <h2 id="titulo-resultado" class="h4">Resultado</h2>
+      <div id="resultado" aria-live="polite" aria-atomic="true">
+        <p class="text-body-secondary">O resultado aparece aqui depois que você responder todas as afirmações.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-top py-4 mt-5 text-center text-body-secondary small">
+    <div class="container">
+      <p class="mb-0">Projeto acadêmico | Efeito vitrine do LinkedIn e o FOMO profissional em estudantes de TI</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/termometro.js"></script>
+</body>
+</html>
