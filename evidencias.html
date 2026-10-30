@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Gráficos com dados de contexto e estudos acadêmicos, com amostra e limitações explícitas.">
+    <meta name="theme-color" content="#f5f4ef">
+    <title>Evidências | Efeito Vitrine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Navegação principal">
+            <div class="container py-2">
+                <a class="navbar-brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span>efeito<span
+                        style="font-weight:500">vitrine</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir ou fechar menu"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contexto.html">A vitrine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teoria.html">Teoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="evidencias.html">Evidências</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certificacoes.html">Certificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contraponto.html">Lado Positivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="termometro.html">Autoteste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="transparencia.html">Transparência</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <button class="btn btn-outline-brand btn-sm mt-2 mt-lg-0" type="button" data-theme-toggle
+                                aria-pressed="false">☾ Tema escuro</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main id="conteudo">
+        <section class="page-header">
+            <div class="container">
+                <p class="section-kicker">Dados e estudos</p>
+                <h1>O que os dados permitem afirmar?</h1>
+                <p class="hero-lede mt-3">Os números ajudam a contextualizar o alcance da plataforma e alguns
+                    estudos investigam relações entre comparação e ansiedade. Cada medida, porém, tem limites.</p>
+            </div>
+        </section>
+        <section class="section-pad">
+            <!-- GRÁFICOS -->
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- PRIMEIRO GRÁFICO: BARRAS -->
+                    <div class="col-lg-6">
+                        <div class="card p-4 h-100">
+
+                            <h3>Duas estimativas, duas métricas</h3>
+
+                            <p>
+                                O LinkedIn anunciou 100 milhões de membros no Brasil
+                                em junho de 2026. A NapoleonCat estimou 82,2 milhões
+                                de audiência endereçável para setembro de 2026, com
+                                base em APIs de marketing. Os valores não devem ser
+                                tratados como contagens equivalentes. A tabela abaixo
+                                apresenta esses mesmos números.
+                            </p>
+
+                            <div class="grafico">
+                                <canvas id="graficoBarras" role="img"
+                                    aria-label="Gráfico de barras: 100 milhões de membros anunciados pelo LinkedIn contra 82,2 milhões de audiência estimada pela NapoleonCat no Brasil.">
+                                </canvas>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SEGUNDO GRÁFICO: ROSCA -->
+                    <div class="col-lg-6">
+                        <div class="card p-4 h-100">
+
+                            <h3>Distribuição por faixa etária</h3>
+                            <p>
+                                Segundo a NapoleonCat, a distribuição da audiência estimada
+                                por faixa etária é: 31,6% de pessoas entre 18 e 24 anos,
+                                49,9% entre 25 e 34 anos, 17% entre 35 e 54 anos e 1,5%
+                                com 55 anos ou mais. A faixa de 25 a 34 anos representa
+                                a maior parcela da audiência estimada. A tabela abaixo também apresenta esses
+                                percentuais.
+                            </p>
+
+
+                            <div class="grafico">
+                                <canvas id="graficoRosca" role="img"
+                                    aria-label="Gráfico de rosca com a distribuição da audiência estimada por faixa etária: 31,6% entre 18 e 24 anos, 49,9% entre 25 e 34 anos, 17% entre 35 e 54 anos e 1,5% com 55 anos ou mais.">
+                                </canvas>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="surface p-4 mt-4">
+                    <h2 class="h3">Tabela acessível dos dados do gráfico</h2>
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0">
+                            <caption class="caption-top">Brasil, números divulgados em 2026. As fontes e as métricas
+                                diferem.
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Indicador</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Fonte / observação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Membros anunciados</th>
+                                    <td>100 milhões</td>
+                                    <td>
+                                        <a href="https://news.linkedin.com/2026/linkedin-reaches-the-milestone-of-100-million-users-in-brazil"
+                                            target="_blank" rel="noopener">
+                                            LinkedIn, 10 jun. 2026
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Audiência estimada</th>
+                                    <td>82,2 milhões</td>
+                                    <td>
+                                        <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/"
+                                            target="_blank" rel="noopener">
+                                            NapoleonCat
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>;
+                                        estimativa de audiência endereçável
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Faixa de 18–24 anos</th>
+                                    <td>31,6%</td>
+                                    <td>
+                                        <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/"
+                                            target="_blank" rel="noopener">
+                                            NapoleonCat
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Faixa de 25–34 anos</th>
+                                    <td>49,9%</td>
+                                    <td>
+                                        <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/"
+                                            target="_blank" rel="noopener">
+                                            NapoleonCat
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Faixa de 35–54 anos</th>
+                                    <td>17%</td>
+                                    <td>
+                                        <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/"
+                                            target="_blank" rel="noopener">
+                                            NapoleonCat
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Faixa de 55 anos ou mais</th>
+                                    <td>1,5%</td>
+                                    <td>
+                                        <a href="https://napoleoncat.com/stats/linkedin-users-in-brazil/"
+                                            target="_blank" rel="noopener">
+                                            NapoleonCat
+                                            <span class="visually-hidden">(abre em nova aba)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2 class="mt-5">O que os estudos mostram</h2>
+                <div class="row g-3 mt-2">
+                    <!-- CARD 1: PREPRINT BRASILEIRO -->
+                    <div class="col-lg-6">
+                        <article class="card topic-card h-100">
+
+                            <span class="pill">Preprint brasileiro</span>
+
+                            <h3>Compração social, inveja, estresse, e perseguição corporativa: uma análise dos aspectos
+                                ocultos do LinkedIn (2025) · SciELO </h3>
+                            <p>
+                                <strong>Amostra:</strong> 622 usuários brasileiros do LinkedIn.
+                            </p>
+                            <p>
+                                <strong>Resultado:</strong> o estudo relacionou FoMO,
+                                comparação social e estresse, identificando a comparação
+                                social como mediadora nessa relação.
+                            </p>
+                            <p>
+                                <strong>Limitação:</strong> o trabalho está disponível
+                                como preprint e ainda não passou por revisão por pares.
+                                Seus resultados devem ser interpretados com cautela.
+                            </p>
+
+                            <a href="https://preprints.scielo.org/index.php/scielo/preprint/view/11054" target="_blank"
+                                rel="noopener">
+                                Consultar estudo ↗
+                                <span class="visually-hidden">(abre em nova aba)</span>
+                            </a>
+
+                        </article>
+                    </div>
+
+
+                    <!-- CARD 2: UNIVERSIDADE AIRLANGGA -->
+                    <div class="col-lg-6">
+                        <article class="card topic-card h-100">
+
+                            <span class="pill">Trabalho acadêmico</span>
+
+                            <h3>Universidade Airlangga · Indonésia</h3>
+
+                            <p>
+                                <strong>Amostra:</strong> 178 estudantes do último ano
+                                da graduação.
+                            </p>
+
+                            <p>
+                                <strong>Resultado:</strong> a comparação social ascendente
+                                no LinkedIn apresentou efeito significativo na ansiedade
+                                de carreira, enquanto a comparação descendente não
+                                apresentou o mesmo resultado.
+                            </p>
+
+                            <p>
+                                <strong>Limitação:</strong> a pesquisa foi realizada
+                                na Indonésia, portanto seus resultados devem ser
+                                considerados dentro daquele contexto cultural e
+                                educacional.
+                            </p>
+
+                            <a href="https://repository.unair.ac.id/144087/1/Artikel%20Ilmiah%20Sang%20Ayu%20Made%20Sri%20Padmawati%20%28113221251%29.pdf"
+                                target="_blank" rel="noopener">
+                                Consultar trabalho acadêmico ↗
+                                <span class="visually-hidden">(abre em nova aba)</span>
+                            </a>
+
+                        </article>
+                    </div>
+
+
+                    <!-- CARD 3: UNIP -->
+                    <div class="col-lg-6">
+                        <article class="card topic-card h-100">
+
+                            <span class="pill">Trabalho acadêmico</span>
+
+                            <h3> Explorando os impactos das redes sociais: ansiedade e FOMO em jovens adultos · UNIP
+                            </h3>
+
+                            <p>
+                                <strong>Amostra:</strong> 113 jovens brasileiros
+                                de 18 a 29 anos.
+                            </p>
+
+                            <p>
+                                <strong>Resultado:</strong> o estudo identificou
+                                associação entre maior tempo e engajamento nas redes
+                                sociais e níveis mais elevados de ansiedade e FoMO.
+                            </p>
+
+                            <p>
+                                <strong>Limitação:</strong> a pesquisa aborda redes
+                                sociais em geral, não investigando especificamente
+                                o LinkedIn ou estudantes de TI.
+                            </p>
+
+                            <a href="https://www.unip.br/eceeic/admin/Anexos/Conteudo/C2026/C3/file_1703202612411566.pdf"
+                                target="_blank" rel="noopener">
+                                Consultar pesquisa ↗
+                                <span class="visually-hidden">(abre em nova aba)</span>
+                            </a>
+
+                        </article>
+                    </div>
+
+
+                    <!-- CARD 4: UNIVERSIDADE DE TWENTE -->
+                    <div class="col-lg-6">
+                        <article class="card topic-card h-100">
+
+                            <span class="pill">Trabalho acadêmico</span>
+
+                            <h3>Explorando o impacto da comparação social na relação entre o engajamento no LinkedIn e a
+                                ansiedade em relação ao futuro, controlando pela autoeficácia
+                                (University of Twente) · 2024</h3>
+
+                            <p>
+                                <strong>Amostra:</strong> 62 participantes de
+                                18 a 34 anos.
+                            </p>
+
+                            <p>
+                                <strong>Resultado:</strong> foi encontrada correlação
+                                positiva entre comparação social e ansiedade sobre
+                                o futuro (r = .40). O resultado indica associação
+                                nesta amostra, não causalidade.
+                            </p>
+
+                            <p>
+                                <strong>Limitação:</strong> a amostra é limitada
+                                e o estudo não demonstra que o LinkedIn causa
+                                ansiedade em todos os estudantes, nem investiga
+                                especificamente a corrida por certificações
+                                entre estudantes de TI. Os estudos têm amostras, países e métodos diferentes, e dois
+                                deles não são do Brasil.
+                            </p>
+
+                            <a href="https://essay.utwente.nl/essays/100400" target="_blank" rel="noopener">
+                                Consultar resumo e trabalho ↗
+                                <span class="visually-hidden">(abre em nova aba)</span>
+                            </a>
+
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="note warning-note mt-4"><strong>Limites desta página:</strong> os dados de usuários são
+                    de fontes e métodos diferentes; o gráfico compara valores reportados, mas não os considera
+                    equivalentes. A pesquisa de Twente é correlacional. O site não apresenta os dados
+                    como prevalência de FOMO profissional entre estudantes de TI.</div>
+
+                <div class="mt-4">
+                    <a href="certificacoes.html" class="btn btn-brand">
+                        Continue: a corrida por certificações →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+            <div><strong class="d-block" style="color:var(--ink)">Efeito Vitrine</strong><span> © 2026 Julia Sarai e
+                    Maria
+                    Eduarda Leão - Projeto acadêmico sobre comparação social, FOMO profissional e estudantes de
+                    TI.</span></div>
+            <div class="d-flex gap-3 flex-wrap">
+                <a href="transparencia.html">Referências e transparência</a>
+                <a href="termometro.html">Termômetro da Vitrine</a>
+            </div>
+        </div>
+        <div class="container mt-3 small">Conteúdo educativo. Não substitui avaliação psicológica, orientação de
+            carreira ou
+            consulta às fontes originais.</div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+
+
+</html>
